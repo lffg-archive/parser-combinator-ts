@@ -2,6 +2,12 @@
 
 Messing around with parser combinators.
 
+### How to run?
+
+```sh
+yarn ts-node src/basic-parser/repl.ts
+```
+
 ---
 
 ### Reference
