@@ -1,4 +1,4 @@
-# `parser-combinator-ts`
+# parser-combinator-ts
 
 Messing around with parser combinators.
 
