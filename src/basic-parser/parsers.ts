@@ -1,11 +1,10 @@
-import { repl } from '../utils/io';
 import type { Narrow } from '../utils/types';
 import type {
   Parser,
   ErrorParserResult,
   SuccessParserResult,
   ParserDataList
-} from './basic-types';
+} from './types';
 
 export function ok<T>(data: T, rest: string): SuccessParserResult<T> {
   return { ok: true, data, rest };

@@ -1,6 +1,6 @@
 import { repl } from '../utils/io';
-import * as p from './basic';
-import type { Parser } from './basic-types';
+import * as p from './parsers';
+import type { Parser } from './types';
 
 const plusToken = p.text('+');
 const numberToken = p.regex(/\d+(?:\.\d+)?/);

@@ -5,10 +5,6 @@ const io = createInterface({
   output: process.stdout
 });
 
-export function puts(...data: any[]): void {
-  console.log(...data);
-}
-
 export function gets(prompt: string): Promise<string> {
   return new Promise((resolve) => {
     io.question(prompt, resolve);
