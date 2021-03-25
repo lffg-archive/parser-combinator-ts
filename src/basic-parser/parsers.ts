@@ -40,6 +40,13 @@ export function regex(regex: RegExp): Parser<string> {
   };
 }
 
+export const eof: Parser<''> = (input) => {
+  if (input.length !== 0) {
+    return error('end of input', input);
+  }
+  return ok('', '');
+};
+
 export function map<U, T>(fn: (state: T) => U, parser: Parser<T>): Parser<U> {
   return function mappedParser(input: string) {
     const result = parser(input);

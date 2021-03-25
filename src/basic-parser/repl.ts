@@ -9,7 +9,8 @@ const number = p.map(Number, numberToken);
 const sum: Parser<number> = p.apply((x1, _, x2) => x1 + x2, [
   number,
   plusToken,
-  number
+  number,
+  p.eof
 ]);
 
 if (!process.env.NODE_ENV) {
