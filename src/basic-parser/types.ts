@@ -5,4 +5,4 @@ export type Parser<T> = (input: string) => ParserResult<T>;
 
 export type ParserDataList<Parsers extends readonly Parser<unknown>[]> = {
   [I in keyof Parsers]: Parsers[I] extends Parser<infer T> ? T : never;
-} & { length: Parsers['length'] };
+};
