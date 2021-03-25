@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+__old__
+build
+
+*.log
