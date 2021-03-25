@@ -14,7 +14,7 @@ const sum: Parser<number> = p.apply((x1, _, x2) => x1 + x2, [
 
 if (!process.env.NODE_ENV) {
   repl('> ', (input, exit) => {
-    if (input === '.exit') exit();
+    if (input === '.exit') return exit();
     console.log(p.parse(sum, input));
   });
 }
